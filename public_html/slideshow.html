@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wooden Interior Design Ideas</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="manifest/css/bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+            body{
+                background-color: #f5e79e;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container container-fluid">
+            <div id="content" class="row">
+                
+            </div>
+        </div>
+        <script>
+            var content = '';
+            for(var ctr=1;ctr<=16;ctr++){
+                content += '<div class="col-lg-3 col-xs-6" style="margin-top:30px;">';
+                content += '<center>';
+                content += '<img src="manifest/images/deco_'+ctr+'.jpg" class="img-responsive img-thumbnail" alt="">';
+                content += '</center>';
+                content += '</div>';
+            }
+            document.getElementById('content').innerHTML = content;
+        </script>    
+        <script src="manifest/js/jquery.min.js"></script>
+        <script src="manifest/js/bootstrap.min.js"></script>
+    </body>
+</html>
